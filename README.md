@@ -1,4 +1,4 @@
-# Geolookup
+# Geolookup (Zip and Postal Codes)
 Procedures, files, and code for integrating geolookup in Salesforce instances
 
 MDK-1/4/19 - Initial Entry
