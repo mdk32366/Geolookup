@@ -25,7 +25,11 @@ world_region	| World Region | Text | Two letter official region code (e.g. "NA" 
 country	| Country | Text | Official two letter country code
 latitude	| Latitude | Geolocation, decimal, 3 places | For mapping and distance calculations
 longitude	| Longitude | Geolocation, decimal, 3 places | For mapping and distance calculations
-irs_estimated_population_2015 | IRS Pop | Number, Integer | Handy and its included in the data
+irs_estimated_population_2015 | Population | Number, Integer | Handy and its included in the data
+
+I figure since USPS is maintaining the information in this manner, and others are aggregating it in a way that can be accessed by API, why not build a box big enough to keep it all in?  It isn't that much data in the long run, and once it is in the DB, you can use it for all kinds of reasons.  
+
+One example, with population, which the IRS is drawing from US Census figures, might be demographic penetration - people responding within a zip code / population for zip code.  Lat/Lon is obvious - mapping and distance calculation.  Timezones for auto-planning call time bands for development people, etc.  It's flexible enough to be used internationally, though you may have to rev this to include country codes for dialing.
 
 
 
@@ -34,4 +38,7 @@ For creating a Custom Object and then loading the data into an instance:  [US Zi
 
 For accessing postal code information for the US and multiple other countries as an API call: [Ziptastic](https://www.getziptastic.com/).  Ziptastic allows you to make 100 calls to their DB every 24 hours for free.  For international NPs, this may be ideal.
 
+### Future Work
+[] Country dialing codes
+[] Region codes
 
