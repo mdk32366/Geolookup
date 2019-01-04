@@ -31,6 +31,13 @@ I figure since USPS is maintaining the information in this manner, and others ar
 
 One example, with population, which the IRS is drawing from US Census figures, might be demographic penetration - people responding within a zip code / population for zip code.  Lat/Lon is obvious - mapping and distance calculation.  Timezones for auto-planning call time bands for development people, etc.  It's flexible enough to be used internationally, though you may have to rev this to include country codes for dialing.
 
+2.  Import USPS information.
+
+Using Dataloader, import the information from the USPS download (see reference section below) into a sandbox instance and then verify the upload took correctly.
+
+3.  Build a flow for populating address fields in any related object record (account, contact, lead) with a zipcode in it.
+
+4.  Build a process that calls the flow to update the record fields.
 
 
 ### References
