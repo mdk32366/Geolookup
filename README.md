@@ -8,8 +8,9 @@ One of the easiest ways of cleaning data is to use other data as a bonified refe
 Procedures:
 
 1.  Create a custom object for holding zip/postal code information.  Below is a table of fields in the USPS download, suggested field types and comments:
+
 USPS Field | Salesforce Field | Type | Comments
--------------------------------------------------
+-----------|------------------|------|-----------
 zip | Zip Code | Number, 9 digits | No hypens, integer
 type	| ZipPostalType | Text | Standard, Military, PO Box, Unique
 decommissioned | Decommissioned | Checkbox | Still viable?
