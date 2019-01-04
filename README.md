@@ -38,6 +38,9 @@ For creating a Custom Object and then loading the data into an instance:  [US Zi
 
 For accessing postal code information for the US and multiple other countries as an API call: [Ziptastic](https://www.getziptastic.com/).  Ziptastic allows you to make 100 calls to their DB every 24 hours for free.  For international NPs, this may be ideal.
 
+Outline for how to build the flow and the process: [Success Community](https://success.salesforce.com/answers?id=90630000000h2ENAAY)
+
+
 ### Future Work
 - [ ] Country dialing codes
 - [ ] Region codes
